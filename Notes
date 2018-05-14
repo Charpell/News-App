@@ -1,0 +1,19 @@
+TouchableHighlight (ios) vs TouchableNativeFeedback (android)
+
+import { Platform } from 'react-native'
+
+render() {
+    if (Platform.OS === 'android') {
+       return (
+          <TouchableNativeFeedback> 
+               ... 
+          </TouchableNativeFeedback>    
+       )
+    } else {
+       return (
+          <TouchableHighlight> 
+               ... 
+          </TouchableHighlight>    
+       )
+    }
+}
